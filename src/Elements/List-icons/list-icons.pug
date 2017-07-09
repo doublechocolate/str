@@ -1,0 +1,7 @@
+mixin List-icons(...ul)
+    ul.list-icons
+        each li in ul
+            li.list-icons__li
+                div.list-icons__li-icon
+                    i( aria-hidden='true' class="fa fa-"+li.icon style="color:"+li.icon_color)
+                span!= li.text

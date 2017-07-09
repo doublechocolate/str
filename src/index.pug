@@ -1,0 +1,174 @@
+include ./Elements/Button/button.pug
+include ./Elements/Arrow-button/arrow-button.pug
+include ./Elements/Pie-chart/pie-chart.pug
+
+
+include ./Elements/toggle/toggle.pug
+include ./Elements/tick-box/tick-box.pug
+include ./Elements/news/news.pug
+include ./Elements/Event/event.pug
+
+include ./Elements/message-form/search.pug
+include ./Elements/video/video.pug
+include ./Elements/donut-chart/donut-chart.pug
+
+include ./Elements/profil/profil.pug
+include ./Elements/location/location.pug
+include ./Elements/list-icons/list-icons.pug
+include ./Elements/reviews/reviews.pug
+
+
+doctype !html
+html
+    head
+    meta(charset = 'utf-8')
+    script( src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAdl-cDpfExj61H5C4hORCrz7WqBBEQKlU&libraries=places&language=ru' )
+    title Frontend Conf
+    body
+        section.preview
+            div.container
+                article.preview__content
+                    img( src="./public/preview.jpg")
+                    section
+                        h2 Frontend Conf
+                        h5 Профессиональная конференция frontend-разработчиков
+                article.preview__arrow
+                    +arrow-button(90, 'orange')#scroll_down
+        section.introduction
+            div.container
+                article
+                    h2.title Профессиональный фестиваль для тех, кто делает Интернет
+                    section.introduction__content
+                        div.introduction__content-left
+                            h3.title Прошлый год
+                            +Video('http://frontendconf.ru/i/frontendconf/2017/fe_share.jpg', 'https://parent4.dfs.ivi.ru/mp4-hi/d1V_opkG7aPnXUPkD_0Kaw,1499654764/storage28/contents/a/f/b10e73d7efdb6edf4cdf09dfb7367b.mp4?rnd=0.6737564431001444&redirected=1').player_red
+                        div.introduction__content-right
+                            |  Отраслевая выставка и целый ряд профессиональных узкотематических конференций: системное администрирование и эксплуатация, высоконагруженные системы и базы данных, серверное программирование, управление проектами и предпринимательство, enterprise-конференция, а также фронтенд и мобильная разработка.  
+        section.timetable
+            div.container
+                article
+                    h2.title дни конференции
+                    section.timetable__content
+                        div.timetable__content-row
+                            +News("Новинки", '24 июля 2017', 'новые браузерные API, технологии, медиа, графика.', './public/days.jpg' ).news_red
+                            div.timetable__speakers
+                                +Profil('./public/durov.png','Павел Дуров','Разработчик',[{href: '/#', icon: 'vk'},
+                                                                                            {href: '/#', icon: 'telegram'}]).profil_red
+                                +Profil('./public/mark.jpg','Марк Цукерберг','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'},
+                                                                                            {href: '/#', icon: 'instagram'}]).profil_red
+                                +Profil('./public/steve.png','Стив Джобс','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'},
+                                                                                            {href: '/#', icon: 'tumblr'}]).profil_red
+                                +Profil('./public/bill.jpg','Билл Гейтс','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'}]).profil_red
+                        div.timetable__content-row.timetable__content-row_yellow
+                            +News("Качество", '25 июля 2017', 'тестирование, быстродействие, интерфейсы, доступность.', './public/days.jpg').news_orange
+                            div.timetable__speakers
+                                +Profil('./public/durov.png','Павел Дуров','Разработчик',[{href: '/#', icon: 'vk'},
+                                                                                            {href: '/#', icon: 'telegram'}]).profil_orange
+                                +Profil('./public/mark.jpg','Марк Цукерберг','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'},
+                                                                                            {href: '/#', icon: 'instagram'}]).profil_orange
+                                +Profil('./public/steve.png','Стив Джобс','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'},
+                                                                                            {href: '/#', icon: 'tumblr'}]).profil_orange
+                                +Profil('./public/bill.jpg','Билл Гейтс','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'}]).profil_orange
+                                +Profil('./public/sergey.jpg','Сергей Брин','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'google-plus'}]).profil_orange
+                        div.timetable__content-row.timetable__content-row_blue
+                            +News("Адаптация", '26 июля 2017', 'мобильный веб, адаптивность, новые устройства.', './public/days.jpg').news_blue
+                            div.timetable__speakers
+                                +Profil('./public/durov.png','Павел Дуров','Разработчик',[{href: '/#', icon: 'vk'},
+                                                                                            {href: '/#', icon: 'telegram'}]).profil_blue
+                                +Profil('./public/mark.jpg','Марк Цукерберг','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'},
+                                                                                            {href: '/#', icon: 'instagram'}]).profil_blue
+                                +Profil('./public/steve.png','Стив Джобс','Разработчик',[{href: '/#', icon: 'facebook'},
+                                                                                            {href: '/#', icon: 'twitter'},
+                                                                                            {href: '/#', icon: 'tumblr'}]).profil_blue
+        section.hours
+            div.container
+                article
+                    h2.title Содержание
+                    section.hours__content
+                        div.hours__content-left
+                                 +Donut-chart( 0.33, {"color": '#e23402', "value": 16},
+                                                    {"color": '#efb402', "value": 12},
+                                                    {"color": '#005bac', "value": 8}
+                                                )
+                        div.hours__content-right
+                            p Длительность конференции суммарно составляет 32 часа.
+                            p Из них:
+                            +List-icons({icon: 'microphone', icon_color:'#e23402', text: '16 - часов лекции'},
+                                        {icon: 'desktop',icon_color:'#efb402', text: '12 - практическая часть'},
+                                        {icon: 'users', icon_color:'#005bac', text: '8 - нетворкинг'})    
+        section.reviews
+            div.container
+                article
+                    h2.title Отзывы
+                    section.reviews__content
+                        +Reviews('bluuue-white','profil_blue',{ avatar :'./public/durov.png',name : 'John Smith',profession: 'ux designer', 
+                                    links : [{href: '/#', icon: 'facebook'},
+                                            {href: '/#', icon: 'twitter'},
+                                            {href: '/#', icon: 'dribbble'}], 
+                                            text : "Hac proident consequat excepteur integer facilisi, quasi mollitia nostra, quisquam, fringilla venenatis vehicula nascetur? Scelerisque laboris, bibendum in dolores quibusdam sollicitudin facere debitis proident! Odit ducimus integer, blandit! Delectus quis, laboris occaecati, minim odio aute quae aliquip quae facere metus. Ea ultrices, viverra nam ipsa beatae quisque magna maxime magnis suspendisse nunc quam facilisis, nulla habitasse. Pretium dolorum!  Exercitation ridiculus, nihil, fusce dictumst tempore tenetur fuga, justo, blanditiis occaecat at eu mollitia, pretium velit per placeat."},
+                                    { avatar :'./public/durov.png',name : 'John Smith',profession: 'ux designer', 
+                                    links : [{href: '/#', icon: 'facebook'},
+                                            {href: '/#', icon: 'twitter'},
+                                            {href: '/#', icon: 'dribbble'}], 
+                                            text : "Hac proident consequat excepteur integer facilisi, quasi mollitia nostra, quisquam, fringilla venenatis vehicula nascetur? Scelerisque laboris, bibendum in dolores quibusdam sollicitudin facere debitis proident! Odit ducimus integer, blandit! Delectus quis, laboris occaecati, minim odio aute quae aliquip quae facere metus. Ea ultrices, viverra nam ipsa beatae quisque magna maxime magnis suspendisse nunc quam facilisis, nulla habitasse. Pretium dolorum! Tempora nihil cum occaecati reprehenderit quaerat! Recusandae fringilla lobortis facilisis cursus rem, quidem. Minima, dolor malesuada aptent, ratione repudiandae inventore occaecat dictumst, aliquid, tempor. Exercitation ridiculus, nihil, fusce dictumst tempore tenetur fuga, justo, blanditiis occaecat at eu mollitia, pretium velit per placeat."},
+                                    { avatar :'./public/durov.png',name : 'John Smith',profession: 'ux designer', 
+                                    links : [{href: '/#', icon: 'facebook'},
+                                            {href: '/#', icon: 'twitter'},
+                                            {href: '/#', icon: 'dribbble'}], 
+                                            text : "Hac proident consequat excepteur integer facilisi, quasi mollitia nostra, quisquam, fringilla venenatis vehicula nascetur? Scelerisque laboris, bibendum in dolores quibusdam sollicitudin facere debitis proident! Odit ducimus integer, blandit! Delectus quis, laboris occaecati, minim odio aute quae aliquip quae facere metus."}
+                                            )
+        section.purchase-ticket
+            div.container
+                div.purchase-ticket__inner
+                    article.places
+                        h2.title Осталось мест
+                        section.premium
+                            h2.title Премиум
+                            +Pie-chart(29, 5, '#efb402' )
+                        section.common
+                            h2.title Обычных
+                            +Pie-chart(37, 5, '#005bac' )
+                    article.form-ticket
+                        h2.title Приобрести билет 
+                        form.message-form.hint-form
+                            div(data-hint="text").hint-control
+                                input(type="text" placeholder="Фамилия" ).message-form__form-control.message-form__input-text
+                            br
+                            div(data-hint="text").hint-control
+                                input(type="text" placeholder="Имя" ).message-form__form-control.message-form__input-text
+                            br
+                            div(data-hint="e-mail").hint-control
+                                input(type="text" placeholder="Электронный адрес" ).message-form__form-control.message-form__input-text
+                            br
+                            div.message-form__row
+                                span Премиум:
+                                +Toggle('toggle2',"#005bac",'checked')
+                            br
+                            div.message-form__row
+                                span Подписаться на новости:
+                                +tick-box('tick-box1','#005bac','checked')
+                            br
+                            +ripple-button('Отправить заявку', 'border-bottom-bluuue')( type="submit" )
+        section.location
+            div.container
+                article
+                    h2.title Рассположение
+                    +Location('Место проведения:', 'Москва, кампус сколково  ', 55.691902, 37.346948,'./public/marker.png')
+        section.events
+            div.container
+                article
+                    h2.title Другие мероприятия
+                    section.events__row
+                        +Event('13', 'Авг', 'HighLoad++', 'Обучающая конференция разработчиков высоконагруженных систем.', './public/other_events.jpg', 'подробнее', 'orange')
+                        +Event('7', 'Сен', 'Whale Rider', 'Конференция по управлению проектами и предпринимательству.', './public/other_events.jpg', 'подробнее', 'orange')
+                        +Event('21', 'Окт', 'BackendConf', 'Конференция для серверных веб-разработчиков.', './public/other_events.jpg', 'подробнее', 'orange')
+        footer подвал сайта ...
+                    

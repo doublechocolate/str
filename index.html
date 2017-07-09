@@ -1,0 +1,440 @@
+<!DOCTYPE !html>
+<html>
+  <head></head>
+  <meta charset="utf-8"/>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdl-cDpfExj61H5C4hORCrz7WqBBEQKlU&amp;libraries=places&amp;language=ru"></script>
+  <title>Frontend Conf</title>
+  <body>
+    <section class="preview">
+      <div class="container">
+        <article class="preview__content"><img src="./public/preview.jpg"/>
+          <section>
+            <h2>Frontend Conf</h2>
+            <h5>Профессиональная конференция frontend-разработчиков</h5>
+          </section>
+        </article>
+        <article class="preview__arrow">
+          <div class="arrow-button arrow-button_orange" style="transform: rotate(90deg);" id="scroll_down">
+            <div class="arrow-button__inner">
+              <svg class="arrow-button-svg" viewbox=" 0 0 100 100">
+                <circle cx="50%" cy="50%" r="46%" s stroke-width="5%"></circle>
+                <polyline points="40,29 62,50 40,71" fill="none" stroke-width="7%"></polyline>
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="introduction">
+      <div class="container">
+        <article>
+          <h2 class="title">Профессиональный фестиваль для тех, кто делает Интернет</h2>
+          <section class="introduction__content">
+            <div class="introduction__content-left">
+              <h3 class="title">Прошлый год</h3>
+              <div class="player player_red">
+                <video muted poster="http://frontendconf.ru/i/frontendconf/2017/fe_share.jpg">
+                  <source src="https://parent4.dfs.ivi.ru/mp4-hi/d1V_opkG7aPnXUPkD_0Kaw,1499654764/storage28/contents/a/f/b10e73d7efdb6edf4cdf09dfb7367b.mp4?rnd=0.6737564431001444&redirected=1">
+                </video>
+                <div class="player__controls">
+                  <div class="player__controls-inner">
+                    <div class="player__controls-play">
+                      <svg class="svg-play" viewBox="0 0 16 16">
+                        <path fill="white" d="M1,14c0,0.547,0.461,1,1,1c0.336,0,0.672-0.227,1-0.375L14.258,9C14.531,8.867,15,8.594,15,8s-0.469-0.867-0.742-1L3,1.375  C2.672,1.227,2.336,1,2,1C1.461,1,1,1.453,1,2V14z"></path>
+                      </svg>
+                      <svg class="svg-pause" viewBox="0 0 512 512">
+                        <path fill="white" d="M224,435.8V76.1c0-6.7-5.4-12.1-12.2-12.1h-71.6c-6.8,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6   C218.6,448,224,442.6,224,435.8z"></path>
+                        <path fill="white" d="M371.8,64h-71.6c-6.7,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6c6.7,0,12.2-5.4,12.2-12.2V76.1   C384,69.4,378.6,64,371.8,64z"></path>
+                      </svg>
+                    </div>
+                    <progress id="progress-bar" min="0" max="100" value="0"></progress>
+                    <div class="player__controls-fullscreen">
+                      <svg x="0px" y="0px" viewBox="0 0 32 32">
+                        <polygon style="fill:white;" points="29.414,26.586 22.828,20 20,22.828 26.586,29.414 24,32 32,32 32,24 "></polygon>
+                        <polygon style="fill:white;" points="2.586,5.414 9.172,12 12,9.172 5.414,2.586 8,0 0,0 0,8 "></polygon>
+                        <polygon style="fill:white;" points="26.586,2.586 20,9.172 22.828,12 29.414,5.414 32,8 32,0 24,0 "></polygon>
+                        <polygon style="fill:white;" points="12,22.828 9.172,20 2.586,26.586 0,24 0,32 8,32 5.414,29.414 "></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="introduction__content-right"> Отраслевая выставка и целый ряд профессиональных узкотематических конференций: системное администрирование и эксплуатация, высоконагруженные системы и базы данных, серверное программирование, управление проектами и предпринимательство, enterprise-конференция, а также фронтенд и мобильная разработка.  </div>
+          </section>
+        </article>
+      </div>
+    </section>
+    <section class="timetable">
+      <div class="container">
+        <article>
+          <h2 class="title">дни конференции</h2>
+          <section class="timetable__content">
+            <div class="timetable__content-row">
+              <section class="news news_red" style="background-image: url(./public/days.jpg);">
+                <div class="news__inner">
+                  <p class="news__title">Новинки</p>
+                  <p class="news__date">24 июля 2017</p>
+                  <p class="news__text">новые браузерные API, технологии, медиа, графика.</p>
+                </div>
+              </section>
+              <div class="timetable__speakers">
+                <section class="profil profil_red">
+                  <div class="profil__portrait" style="background-image: url(./public/durov.png);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Павел Дуров</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-vk"></i></a><a href="/#"><i class="fa fa-telegram"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_red">
+                  <div class="profil__portrait" style="background-image: url(./public/mark.jpg);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Марк Цукерберг</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_red">
+                  <div class="profil__portrait" style="background-image: url(./public/steve.png);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Стив Джобс</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-tumblr"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_red">
+                  <div class="profil__portrait" style="background-image: url(./public/bill.jpg);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Билл Гейтс</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="timetable__content-row timetable__content-row_yellow">
+              <section class="news news_orange" style="background-image: url(./public/days.jpg);">
+                <div class="news__inner">
+                  <p class="news__title">Качество</p>
+                  <p class="news__date">25 июля 2017</p>
+                  <p class="news__text">тестирование, быстродействие, интерфейсы, доступность.</p>
+                </div>
+              </section>
+              <div class="timetable__speakers">
+                <section class="profil profil_orange">
+                  <div class="profil__portrait" style="background-image: url(./public/durov.png);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Павел Дуров</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-vk"></i></a><a href="/#"><i class="fa fa-telegram"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_orange">
+                  <div class="profil__portrait" style="background-image: url(./public/mark.jpg);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Марк Цукерберг</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_orange">
+                  <div class="profil__portrait" style="background-image: url(./public/steve.png);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Стив Джобс</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-tumblr"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_orange">
+                  <div class="profil__portrait" style="background-image: url(./public/bill.jpg);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Билл Гейтс</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_orange">
+                  <div class="profil__portrait" style="background-image: url(./public/sergey.jpg);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Сергей Брин</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="timetable__content-row timetable__content-row_blue">
+              <section class="news news_blue" style="background-image: url(./public/days.jpg);">
+                <div class="news__inner">
+                  <p class="news__title">Адаптация</p>
+                  <p class="news__date">26 июля 2017</p>
+                  <p class="news__text">мобильный веб, адаптивность, новые устройства.</p>
+                </div>
+              </section>
+              <div class="timetable__speakers">
+                <section class="profil profil_blue">
+                  <div class="profil__portrait" style="background-image: url(./public/durov.png);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Павел Дуров</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-vk"></i></a><a href="/#"><i class="fa fa-telegram"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_blue">
+                  <div class="profil__portrait" style="background-image: url(./public/mark.jpg);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Марк Цукерберг</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="profil profil_blue">
+                  <div class="profil__portrait" style="background-image: url(./public/steve.png);"></div>
+                  <div class="profil__data">
+                    <div class="profil__data-arrow"></div>
+                    <p class="profil__name">Стив Джобс</p>
+                    <p class="profil__profession">Разработчик</p>
+                    <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-tumblr"></i></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+    <section class="hours">
+      <div class="container">
+        <article>
+          <h2 class="title">Содержание</h2>
+          <section class="hours__content">
+            <div class="hours__content-left">
+              <div class="donut-chart" data-linewidth="0.33" data-pies='[{"color":"#e23402","value":16},{"color":"#efb402","value":12},{"color":"#005bac","value":8}]'></div>
+            </div>
+            <div class="hours__content-right">
+              <p>Длительность конференции суммарно составляет 32 часа.</p>
+              <p>Из них:</p>
+              <ul class="list-icons">
+                <li class="list-icons__li">
+                  <div class="list-icons__li-icon"><i class="fa fa-microphone" aria-hidden="true" style="color:#e23402;"></i></div><span>16 - часов лекции</span>
+                </li>
+                <li class="list-icons__li">
+                  <div class="list-icons__li-icon"><i class="fa fa-desktop" aria-hidden="true" style="color:#efb402;"></i></div><span>12 - практическая часть</span>
+                </li>
+                <li class="list-icons__li">
+                  <div class="list-icons__li-icon"><i class="fa fa-users" aria-hidden="true" style="color:#005bac;"></i></div><span>8 - нетворкинг</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <article>
+          <h2 class="title">Отзывы</h2>
+          <section class="reviews__content">
+            <div class="slider-reviews">
+              <div class="arrow-button arrow-button_bluuue-white slider-reviews__arrow-left arrow-button_disabled" style="transform: rotate(180deg);">
+                <div class="arrow-button__inner">
+                  <svg class="arrow-button-svg" viewbox=" 0 0 100 100">
+                    <circle cx="50%" cy="50%" r="46%" s stroke-width="5%"></circle>
+                    <polyline points="40,29 62,50 40,71" fill="none" stroke-width="7%"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div class="slider-reviews__content">
+                <div class="slider-reviews__content-inner" style="width: 300%;">
+                  <div class="review" style="width: 33.333333333333336%;">
+                    <section class="profil profil_blue review__profil">
+                      <div class="profil__portrait" style="background-image: url(./public/durov.png);"></div>
+                      <div class="profil__data">
+                        <div class="profil__data-arrow"></div>
+                        <p class="profil__name">John Smith</p>
+                        <p class="profil__profession">ux designer</p>
+                        <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                      </div>
+                    </section>
+                    <p class="review__text">Hac proident consequat excepteur integer facilisi, quasi mollitia nostra, quisquam, fringilla venenatis vehicula nascetur? Scelerisque laboris, bibendum in dolores quibusdam sollicitudin facere debitis proident! Odit ducimus integer, blandit! Delectus quis, laboris occaecati, minim odio aute quae aliquip quae facere metus. Ea ultrices, viverra nam ipsa beatae quisque magna maxime magnis suspendisse nunc quam facilisis, nulla habitasse. Pretium dolorum!  Exercitation ridiculus, nihil, fusce dictumst tempore tenetur fuga, justo, blanditiis occaecat at eu mollitia, pretium velit per placeat.</p>
+                  </div>
+                  <div class="review" style="width: 33.333333333333336%;">
+                    <section class="profil profil_blue review__profil">
+                      <div class="profil__portrait" style="background-image: url(./public/durov.png);"></div>
+                      <div class="profil__data">
+                        <div class="profil__data-arrow"></div>
+                        <p class="profil__name">John Smith</p>
+                        <p class="profil__profession">ux designer</p>
+                        <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                      </div>
+                    </section>
+                    <p class="review__text">Hac proident consequat excepteur integer facilisi, quasi mollitia nostra, quisquam, fringilla venenatis vehicula nascetur? Scelerisque laboris, bibendum in dolores quibusdam sollicitudin facere debitis proident! Odit ducimus integer, blandit! Delectus quis, laboris occaecati, minim odio aute quae aliquip quae facere metus. Ea ultrices, viverra nam ipsa beatae quisque magna maxime magnis suspendisse nunc quam facilisis, nulla habitasse. Pretium dolorum! Tempora nihil cum occaecati reprehenderit quaerat! Recusandae fringilla lobortis facilisis cursus rem, quidem. Minima, dolor malesuada aptent, ratione repudiandae inventore occaecat dictumst, aliquid, tempor. Exercitation ridiculus, nihil, fusce dictumst tempore tenetur fuga, justo, blanditiis occaecat at eu mollitia, pretium velit per placeat.</p>
+                  </div>
+                  <div class="review" style="width: 33.333333333333336%;">
+                    <section class="profil profil_blue review__profil">
+                      <div class="profil__portrait" style="background-image: url(./public/durov.png);"></div>
+                      <div class="profil__data">
+                        <div class="profil__data-arrow"></div>
+                        <p class="profil__name">John Smith</p>
+                        <p class="profil__profession">ux designer</p>
+                        <div class="profil__links"><a href="/#"><i class="fa fa-facebook"></i></a><a href="/#"><i class="fa fa-twitter"></i></a><a href="/#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                      </div>
+                    </section>
+                    <p class="review__text">Hac proident consequat excepteur integer facilisi, quasi mollitia nostra, quisquam, fringilla venenatis vehicula nascetur? Scelerisque laboris, bibendum in dolores quibusdam sollicitudin facere debitis proident! Odit ducimus integer, blandit! Delectus quis, laboris occaecati, minim odio aute quae aliquip quae facere metus.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow-button arrow-button_bluuue-white slider-reviews__arrow-right" style="transform: rotate(0deg);">
+                <div class="arrow-button__inner">
+                  <svg class="arrow-button-svg" viewbox=" 0 0 100 100">
+                    <circle cx="50%" cy="50%" r="46%" s stroke-width="5%"></circle>
+                    <polyline points="40,29 62,50 40,71" fill="none" stroke-width="7%"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+    <section class="purchase-ticket">
+      <div class="container">
+        <div class="purchase-ticket__inner">
+          <article class="places">
+            <h2 class="title">Осталось мест</h2>
+            <section class="premium">
+              <h2 class="title">Премиум</h2>
+              <div class="pie-chart" data-percent="29" data-linewidth="5" data-barcolor="#efb402">
+                <div class="pie-chart__inner">
+                  <div class="pie-chart__value"><span></span></div>
+                </div>
+              </div>
+            </section>
+            <section class="common">
+              <h2 class="title">Обычных</h2>
+              <div class="pie-chart" data-percent="37" data-linewidth="5" data-barcolor="#005bac">
+                <div class="pie-chart__inner">
+                  <div class="pie-chart__value"><span></span></div>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article class="form-ticket">
+            <h2 class="title">Приобрести билет </h2>
+            <form class="message-form hint-form">
+              <div class="hint-control" data-hint="text">
+                <input class="message-form__form-control message-form__input-text" type="text" placeholder="Фамилия"/>
+              </div><br/>
+              <div class="hint-control" data-hint="text">
+                <input class="message-form__form-control message-form__input-text" type="text" placeholder="Имя"/>
+              </div><br/>
+              <div class="hint-control" data-hint="e-mail">
+                <input class="message-form__form-control message-form__input-text" type="text" placeholder="Электронный адрес"/>
+              </div><br/>
+              <div class="message-form__row"><span>Премиум:</span>
+                <label class="toggle toggle_on" style="background-color:#005bac;" checked="checked">
+                  <div class="toggle__circle"></div>
+                  <input type="checkbox" name="toggle2" style="display: none;">
+                </label>
+              </div><br/>
+              <div class="message-form__row"><span>Подписаться на новости:</span>
+                <label class="tick-box" data-background-color="#005bac" checked="checked">
+                  <input type="checkbox" style="display: none;" name="tick-box1">
+                  <div class="tick-box__inner">
+                    <svg class="tick-box-svg" viewbox=" 0 0 100 100">
+                      <circle cx="50%" cy="50%" r="46%" style=" fill: #005bac;"></circle>
+                      <polyline points="32,52 48,68 77,38" fill="none" stroke="#c0c0c0" stroke-width="10%"></polyline>
+                    </svg>
+                  </div>
+                </label>
+              </div><br/>
+              <button class="ripple-button_border-bottom-bluuue ripple-button" type="submit">Отправить заявку</button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="location">
+      <div class="container">
+        <article>
+          <h2 class="title">Рассположение</h2>
+          <div class="map" data-lat="55.691902" data-lng="37.346948" data-marker="./public/marker.png">
+            <div class="map__body"></div>
+            <div class="map__footer">
+              <div class="map__footer-title">Место проведения:</div>
+              <div class="map__footer-place">Москва, кампус сколково  </div>
+              <div class="map__footer-icons"><i class="fa fa-crosshairs" aria-hidden="true"></i><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="events">
+      <div class="container">
+        <article>
+          <h2 class="title">Другие мероприятия</h2>
+          <section class="events__row">
+            <section class="event_orange event" style="background-image: url(./public/other_events.jpg);">
+              <div class="event__inner">
+                <p class="event__date"> <span>13</span>Aug</p>
+                <p class="event__title">HighLoad++</p>
+                <p class="event__text">Обучающая конференция разработчиков высоконагруженных систем.</p>
+                <div class="event__button">
+                  <button class="ripple-button_undefined ripple-button">подробнее</button>
+                </div>
+              </div>
+            </section>
+            <section class="event_orange event" style="background-image: url(./public/other_events.jpg);">
+              <div class="event__inner">
+                <p class="event__date"> <span>7</span>Aug</p>
+                <p class="event__title">Whale Rider</p>
+                <p class="event__text">Конференция по управлению проектами и предпринимательству.</p>
+                <div class="event__button">
+                  <button class="ripple-button_undefined ripple-button">подробнее</button>
+                </div>
+              </div>
+            </section>
+            <section class="event_orange event" style="background-image: url(./public/other_events.jpg);">
+              <div class="event__inner">
+                <p class="event__date"> <span>21</span>Aug</p>
+                <p class="event__title">BackendConf</p>
+                <p class="event__text">Конференция для серверных веб-разработчиков.</p>
+                <div class="event__button">
+                  <button class="ripple-button_undefined ripple-button">подробнее</button>
+                </div>
+              </div>
+            </section>
+          </section>
+        </article>
+      </div>
+    </section>
+    <footer>подвал сайта ...</footer>
+  <script type="text/javascript" src="./public/main.js"></script></body>
+</html>

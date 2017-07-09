@@ -1,0 +1,87 @@
+.arrow-button{
+
+    cursor: pointer;
+    
+    .arrow-button__inner{
+
+        padding-top 100%;
+        position relative;
+        
+        .arrow-button-svg{
+            
+            width 100%;
+            height 100%;
+            position absolute;
+            top: 0;
+            left 0; 
+        }
+        
+    }
+    
+    
+  &.arrow-button_white-blue{
+       
+       circle{
+           stroke #4eb7a8;
+           fill white;
+       }
+       
+       polyline{
+           
+           stroke #4eb7a8;
+       }
+   }
+   
+   &.arrow-button_disabled{
+       
+       circle{
+           stroke #e5e5e5 !important;
+           fill #e5e5e5 !important;
+       }
+       
+       polyline{
+           
+           stroke white;
+       }
+   }
+   
+   &.arrow-button_blue-white{
+       
+       circle{
+           stroke #4eb7a8;
+           fill #4eb7a8;
+       }
+       
+       polyline{
+           
+           stroke  white;
+       }
+   }
+   
+   &.arrow-button_bluuue-white{
+           
+        circle{
+           stroke #005bac;
+           fill #005bac;
+       }
+       
+       polyline{
+           
+           stroke  white;
+       } 
+     
+   }
+   
+   &.arrow-button_orange{
+           
+       circle{
+           stroke #FA6900;
+           fill none;
+       }
+       
+       polyline{
+           
+           stroke  #FA6900;
+       }
+   }
+}

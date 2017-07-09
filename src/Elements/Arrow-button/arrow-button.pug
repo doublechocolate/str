@@ -1,0 +1,6 @@
+mixin arrow-button(angle, theme)
+    div&attributes(attributes).arrow-button(class="arrow-button_"+theme  style="transform: rotate("+angle+"deg);")
+        div.arrow-button__inner
+            svg( viewbox=" 0 0 100 100").arrow-button-svg
+                circle( cx="50%" cy="50%" r="46%" s stroke-width="5%" )
+                polyline( points="40,29 62,50 40,71" fill="none"  stroke-width="7%" )

@@ -1,0 +1,429 @@
+@font-face{
+    
+    font-family LatoBlack;
+    src url(./Fonts/Lato-Black.ttf);
+}
+
+@font-face{
+    
+    font-family LatoLight;
+    src url(./Fonts/Lato-Light.ttf);
+}
+
+@font-face{
+    
+    font-family LatoRegular;
+    src url(./Fonts/Lato-Regular.ttf);
+}
+
+
+@font-face{
+    
+    font-family SourceSansProRegular;
+    src url(./Fonts/SourceSansProLight.ttf);
+}
+
+
+html, body{
+    padding 0;
+    margin 0;
+}
+
+
+.container{
+
+    margin auto;
+    width: 1100px;
+   font-family SourceSansProRegular;
+    .title{
+        
+        font-family LatoBlack;
+        text-align center;
+        font-size 2.2em;
+        
+        text-transform uppercase;
+        color #4f4f4f;
+       
+    }
+    
+    
+}
+
+
+    .preview{
+        
+        height 100%;
+        width 100%;
+        background-color #3dc8dd;
+        overflow hidden;
+       
+        
+        &:before{
+            
+            content "";
+            display table;
+            clear both;
+        }
+        .preview__content{
+            
+         height 100%    
+         display flex;
+         justify-content space-between;
+         align-items center;
+         
+            img{
+            
+                width 60%;
+            }
+            
+            
+            section{
+                
+                color white;
+                font-size 1.6em;
+                
+                h2{
+                    
+                    font-size 2.2em;
+                }
+            }
+         
+        }
+        
+        .preview__arrow{
+            
+            
+            width 100%;
+            bottom 0;
+            height 20%;
+            margin-top -8em;
+            .arrow-button{
+                
+                width 10%;
+                margin auto;
+            }
+            
+        }
+     
+    }
+
+    
+    .introduction{
+        
+        
+         width 100%;
+         margin-bottom 6%;
+         
+         .introduction__content{
+        
+            display flex;
+            justify-content space-around;
+            .introduction__content-left{
+                
+                width 48%;
+             
+            }
+            
+             .introduction__content-right{
+                
+                width 40%;
+                font-size 1.6em;
+                font-family LatoRegular;
+                padding-top 10%;
+                line-height 1.3em;
+       
+            }
+       
+        }
+    }
+    
+    .timetable{
+       margin-bottom 6%;
+        .timetable__content{
+            
+            
+            
+            .timetable__content-row{
+                
+                display flex;
+                justify-content space-between;
+                margin-bottom 4%;
+                font-size 0.75em;
+                
+                .news{
+                    
+                    width 31%;
+                    height 20em;
+                   
+                }
+                .timetable__speakers{
+                    
+                    display flex;
+                    align-items flex-start; 
+                    flex-wrap wrap;
+                    width 69%;
+                
+                    .profil{
+                   
+                       font-size 0.62em;
+                       margin-left 1em;
+                    } 
+                }
+              
+            }
+            
+         
+        }
+    }
+    
+    .hours{
+        
+        margin-bottom 6%;
+        
+        .hours__content{
+            
+            display flex;
+            justify-content space-around;
+            
+            .hours__content-left{
+                
+                width 30%;
+                
+                .donut-chart{
+                    
+                    width 100%;
+                }
+            }
+            
+            .hours__content-right{
+                
+                width 50%;
+                
+               font-size 1.7em;
+               
+               .list-icons{
+                   
+                   margin-left 1.5em;
+               }
+            }
+        }
+    }
+    
+    .reviews{
+        padding-top 0.1%;
+ background-color #3dc8dd;
+ margin-bottom 3%;
+ color white;
+ 
+ 
+ .title{
+     
+     color white;
+ }
+    }
+    
+    .purchase-ticket{
+            
+         margin-bottom 6%;
+        .purchase-ticket__inner{
+            
+       
+            display flex;
+            justify-content space-between;
+            
+            
+            .places{
+                
+                width 50%;
+                
+                section{
+                    
+                    margin auto;
+                    width 36%
+                    
+                }
+            }
+            
+            .form-ticket{
+                
+                width 50%;
+                
+                form{
+                   font-size 1.6em;
+                    width 70%;
+                    margin auto;
+                    
+                    
+                    button{
+                        
+                        margin auto;
+                        display block;
+                        
+                    }
+                }
+            }
+       
+        }
+     }
+    
+     
+    .location{
+        
+        margin-bottom 6%;
+        
+        
+        .map__footer{
+            
+         background-color #e23402 !important;   
+        }
+    }
+    .events{
+       
+        margin-bottom 5%;
+        .events__row{
+            
+            display flex;
+            justify-content space-between;
+            align-items center;
+            
+            
+            .event{
+                
+                width 28%;
+                font-size 0.6em;
+                 height 30em;
+                 
+                 button{
+                     
+                     font-size 1.2em;
+                 }
+            }
+        }
+    }
+
+
+
+footer{
+    
+    padding-top 5%;
+    background-color #1B1D1F;
+    text-align center;
+    font-size 5em;
+    color white;
+}
+
+@media screen and (max-width: 10000px){
+        .container{
+            
+            width 3760px !important;
+        }
+        
+        body{
+            
+            font-size 51px;
+        }
+    }
+
+
+@media screen and (max-width: 3820px){
+        .container{
+            
+            width 3000px !important;
+        }
+        
+        body{
+            
+            font-size 40.9px;
+        }
+    }
+
+@media screen and (max-width: 3020px){
+        .container{
+            
+            width 2310px !important;
+        }
+        
+        body{
+            
+            font-size 32.225px;
+        }
+    }
+
+
+@media screen and (max-width: 2350px){
+        .container{
+            
+            width 1825px !important;
+        }
+        
+        body{
+            
+            font-size 25.78px;
+        }
+    }
+    
+
+@media screen and (max-width: 1860px){
+        .container{
+            
+            width 1400px !important;
+        }
+        
+        body{
+            
+            font-size 20.3px;
+        }
+    }
+
+@media screen and (max-width: 1400px){
+        .container{
+            
+            width 1100px !important;
+        }
+        
+        body{
+            
+            font-size 16px;
+        }
+    }
+    
+    
+    
+    @media screen and (max-width: 1120px){
+        .container{
+            
+            width 880px !important;
+        }
+        
+        body{
+            
+            font-size 12.8px;
+        }
+    }
+    
+     @media screen and (max-width: 900px){
+        .container{
+            
+            width 700px !important;
+        }
+        
+        body{
+            
+            font-size 10.24px;
+        }
+    }
+
+  @media screen and (max-width: 720px){
+        .container{
+            
+            width 560px !important;
+        }
+        
+        
+          body{
+            
+            font-size 8.2px;
+        }
+    }
+
+

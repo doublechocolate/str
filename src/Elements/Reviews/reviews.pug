@@ -1,0 +1,12 @@
+mixin Reviews(arrow_theme, profil_theme, ...reviews)
+    div.slider-reviews&attributes(attributes)
+        +arrow-button(180, arrow_theme).slider-reviews__arrow-left.arrow-button_disabled
+        div.slider-reviews__content
+            - var inner_width = 100*reviews.length;
+            - var preview_width = 100.0 / reviews.length;
+            div.slider-reviews__content-inner(style="width: "+inner_width+"%;")
+                each review in reviews
+                    div.review(style="width: "+preview_width+"%;")
+                            +Profil( review.avatar,review.name,review.profession, review.links)(class!=profil_theme).review__profil
+                            p.review__text!= review.text
+        +arrow-button(0, arrow_theme).slider-reviews__arrow-right    
